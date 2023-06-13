@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>search-bar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-searchbar [debounce]="1000" (ionInput)="searchCarModels($event)"></ion-searchbar>
+
+<ion-list>
+  <ion-item *ngFor="let item of result">
+    <ion-label>
+      {{item}}
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-segment value="default">
+  <ion-segment-button value="default">
+    <ion-label>Default</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="segment">
+    <ion-label>Segment</ion-label>
+  </ion-segment-button>
+</ion-segment>
+</ion-content>
+ 

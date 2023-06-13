@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "445735321434",
+    "project_id": "practiceionic-37f27",
+    "storage_bucket": "practiceionic-37f27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445735321434:android:97873093232da1f3fcbd63",
+        "android_client_info": {
+          "package_name": "com.gayatri.practiceIonic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445735321434-d94785242nr80m2p7j2uj7g4iq8mv20u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoUOeQcvchwPXOB8pSsrqZFr-5suVkbKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445735321434-d94785242nr80m2p7j2uj7g4iq8mv20u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

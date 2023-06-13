@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>select</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-select placeholder="Select a laptop">
+      <ion-select-option value="lenovo">
+        lenovo
+      </ion-select-option>
+      <ion-select-option value="dell">
+        Dell
+      </ion-select-option>
+      <ion-select-option value="hp">
+        Hp
+      </ion-select-option>
+      <ion-select-option value="apple">
+        Apple
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-select interface="action-sheet" placeholder="Select a laptop">
+      <ion-select-option value="lenovo">
+        lenovo
+      </ion-select-option>
+      <ion-select-option value="dell">
+        Dell
+      </ion-select-option>
+      <ion-select-option value="hp">
+        Hp
+      </ion-select-option>
+      <ion-select-option value="apple">
+        Apple
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-select fill="outline" interface="popover" [multiple]="true" placeholder="Select a laptop">
+      <ion-select-option value="lenovo">
+        lenovo
+      </ion-select-option>
+      <ion-select-option value="dell">
+        Dell
+      </ion-select-option>
+      <ion-select-option value="hp">
+        Hp
+      </ion-select-option>
+      <ion-select-option value="apple">
+        Apple
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+</ion-content>

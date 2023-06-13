@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-button id="modal"> 
+  Open modal
+</ion-button>
+<ion-modal trigger="modal">
+<ng-template >
+  <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="cancel()">
+        Cancel
+      </ion-button>
+      <ion-title>
+        Modal
+      </ion-title>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-button (click)="confirm()">
+        Confirm
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+  Apple 
+  </ion-item>
+  <ion-item>
+   Mangos
+    </ion-item>
+    <ion-item>
+      Banana 
+      </ion-item>
+</ion-content>
+</ng-template>
+</ion-modal>
+
+<ion-button id="fireTrigger">Open Popover</ion-button>
+<ion-popover trigger="fireTrigger" triggerAction="click">
+  <ng-template >
+    <ion-content>
+      This is popover..
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button (click)="showloading()">
+  Show loader
+</ion-button>
+
+<ion-progress-bar [value]="progress" style="margin-top: 50%;">
+
+</ion-progress-bar>
+<h2 >Progress bar</h2>
+<ion-progress-bar type="indeterminate" style="margin-top: 50%;">
+</ion-progress-bar>
+</ion-content>
+
+

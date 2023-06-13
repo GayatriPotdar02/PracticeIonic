@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>date</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-datetime></ion-datetime>
+<br>
+<ion-datetime presentation="month-year"></ion-datetime>
+<br>
+<ion-datetime presentation="time"></ion-datetime>
+<br>
+<ion-datetime presentation="date-time" [preferWheel]="true"> </ion-datetime>
+<br>
+<ion-datetime presentation="date" [multiple]="true" [value]="['2023-04-21']"> </ion-datetime>
+<br>
+<ion-datetime [showDefaultTitle]="true" > </ion-datetime>
+<br>
+<ion-datetime> <span slot="title"> select exam date</span> </ion-datetime>
+<br>
+<ion-datetime [showDefaultButtons]="true"> </ion-datetime>
+<br>
+<ion-datetime #datetime> 
+  <ion-buttons slot="buttons">
+<ion-button (click)="datetime.reset()" color="danger">
+ Reset
+</ion-button>
+
+<ion-button (click)="datetime.cancel()" color="primary">
+  Cancel
+ </ion-button>
+
+ <ion-button (click)="datetime.confirm()" color="secondry">
+  Confirm
+ </ion-button>
+  </ion-buttons>
+</ion-datetime>
+
+<br>
+<ion-datetime presentation="date" [highlightedDates]="highlightedDates"> </ion-datetime>
+
+</ion-content>
